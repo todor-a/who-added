@@ -3,8 +3,14 @@
     "version": "0.0.0",
     "main": "index.js",
     "type": "module",
+    "repository": {
+        "url": "git@github.com:todor-a/who-added.git"
+    },
     "bin": {
         "who-added": "./dist/index.js"
+    },
+    "exports": {
+        "bin": "./dist/index.js"
     },
     "scripts": {
         "build": "tsdown",
