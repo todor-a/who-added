@@ -5,8 +5,15 @@ import { parseArgs } from 'node:util';
 
 const { values, positionals } = parseArgs({
     options: {
-        dependency: { type: 'string', short: 'd' },
-        file: { type: 'string', short: 'f', default: 'package.json' },
+        dependency: {
+            short: 'd',
+            type: 'string',
+        },
+        file: {
+            short: 'f',
+            type: 'string',
+            default: 'package.json',
+        },
     },
     strict: false,
     allowPositionals: true,
