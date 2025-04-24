@@ -20,7 +20,7 @@ const { values, positionals } = parseArgs({
 });
 
 const dep = values.dependency || positionals[0];
-const file = values.file;
+const file = values.file ?? 'package.json';
 
 if (!dep) {
     console.error('Error: dependency name is required.');
