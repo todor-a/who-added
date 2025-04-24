@@ -1,0 +1,26 @@
+{
+    "name": "who-added",
+    "version": "0.0.0",
+    "main": "index.js",
+    "type": "module",
+    "bin": {
+        "who-added": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsdown",
+        "format": "npx @biomejs/biome format --write",
+        "start": "node --experimental-transform-types --experimental-strip-types index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "@types/node": "^22.14.1",
+        "semantic-release": "^24.2.3",
+        "tsdown": "^0.9.6",
+        "typescript": "^5.8.3"
+    },
+    "private": true
+}
